@@ -1,0 +1,7 @@
+bosdyn-api==5.0.1
+bosdyn-client==5.0.1
+bosdyn-core==5.0.1
+bosdyn-mission==5.0.1
+bosdyn-choreography-client==5.0.1
+bosdyn-choreography-protos==5.0.1
+bosdyn-orbit==5.0.1
