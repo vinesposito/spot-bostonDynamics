@@ -23,12 +23,10 @@ venv\Scripts\activate
 
 ### 3. Installa le dipendenze
 
-Una volta attivato l’ambiente, installa i pacchetti richiesti:
+Una volta attivato l’ambiente, installa le dipendenze dal file `requirements.txt`:
 
 ```bash
-pip install bosdyn-api==5.0.1 bosdyn-client==5.0.1 bosdyn-core==5.0.1 \
-            bosdyn-mission==5.0.1 bosdyn-choreography-client==5.0.1 \
-            bosdyn-choreography-protos==5.0.1 bosdyn-orbit==5.0.1
+pip install -r requirements.txt
 ```
 
 ---
@@ -43,13 +41,29 @@ deactivate
 
 ---
 
+## 🔹 File requirements.txt
+
+Il progetto include un file `requirements.txt` con tutte le dipendenze necessarie:
+
+```txt
+bosdyn-api==5.0.1
+bosdyn-client==5.0.1
+bosdyn-core==5.0.1
+bosdyn-mission==5.0.1
+bosdyn-choreography-client==5.0.1
+bosdyn-choreography-protos==5.0.1
+bosdyn-orbit==5.0.1
+```
+
+---
+
 ## 🔹 Consigli
 
 * Usa un ambiente virtuale **per ogni pacchetto o progetto**, così da mantenere le dipendenze separate.
-* Puoi salvare le dipendenze in un file `requirements.txt` ed installarle tutte insieme con:
+* Se aggiorni i pacchetti, puoi rigenerare il file `requirements.txt` con:
 
   ```bash
-  pip install -r requirements.txt
+  pip freeze > requirements.txt
   ```
 
 ---
@@ -58,4 +72,3 @@ deactivate
 
 * [Python venv documentation](https://docs.python.org/3/library/venv.html)
 * [Boston Dynamics Spot SDK](https://dev.bostondynamics.com/)
-
